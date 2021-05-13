@@ -53,9 +53,37 @@ console.log(sumArray(numbers))
 
 // Calculate the Average
 
+function averageNumbers(array){
+  
+  // if (array.length == 0) {
+  //   return undefined;
+  // }
+  // for (i = 0; i < array.length; i++) {
+  //   sum = sum + array[i];
+  // }
+  return array.length == 0 ? undefined : sumArray(array) / array.length
+}
+
+// let averageNumbers = array => array.length == 0 ? undefined : sumArray(array) / array.length;
+
 let numbersAvg = [2, 6, 9, 10, 7, 4, 1, 9];
 
+console.log(averageNumbers(numbersAvg))
+
 // Array of Strings
+
+function averageWordLength(array){
+  let wordLengthSum = 0;
+  if (array.length == 0) {
+    return undefined;
+  }
+  for (i = 0; i < array.length; i++) {
+    
+    wordLengthSum = wordLengthSum + array[i]
+  }
+  return wordLengthSum / array.length
+}
+
 let wordsArr = [
   "seat",
   "correspond",
@@ -68,6 +96,8 @@ let wordsArr = [
   "fuel",
   "palace",
 ];
+
+console.log(averageWordLength(wordsArr))
 
 // Unique Arrays
 let wordsUnique = [
