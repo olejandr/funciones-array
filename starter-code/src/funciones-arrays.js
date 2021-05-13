@@ -100,6 +100,11 @@ let wordsArr = [
 console.log(averageWordLength(wordsArr))
 
 // Unique Arrays
+
+function uniquifyArray(){
+  
+}
+
 let wordsUnique = [
   "crab",
   "poison",
